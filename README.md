@@ -62,7 +62,7 @@ The application uses a **Retrieval-Augmented Generation (RAG)** pipeline to retr
 ---
 ## Streamlit-App
  - Application is up and running at: [MediChat-Pro](https://medichat-pro-01.streamlit.app/)
- - Demo: [DemoMediChat-Pro in Action](https://github.com/user-attachments/assets/fa38957a-8236-4eb6-b0fc-919cd2232ca7)
+ - Demo: [MediChat-Pro in Action](https://github.com/user-attachments/assets/fa38957a-8236-4eb6-b0fc-919cd2232ca7)
 
 ---
 
