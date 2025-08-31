@@ -1,0 +1,15 @@
+# secrets - Ignore env files
+config.py
+.streamlit/secrets.toml
+.env
+*.env
+app/.env
+
+
+# python
+__pycache__/
+*.pyc
+
+# venv (optional)
+venv/
+.env*/    # conda/virtual env folders if any

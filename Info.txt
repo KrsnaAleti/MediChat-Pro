@@ -1,0 +1,21 @@
+This file, requirements.txt, is a standard way in Python development to list all the external packages a project needs to run. When someone wants to set up this project, they can use the command pip install -r requirements.txt to automatically install all the necessary dependencies.
+
+Based on the file path d:\[00]Edu\00-Courses\03-GenAI_Euron\02-MedicalChatbot_RAG\requirements.txt, it seems these packages are for building a "Medical Chatbot" using a RAG (Retrieval-Augmented Generation) architecture.
+
+Here's a breakdown of each package and its likely role in this project:
+
+streamlit: A popular open-source framework for building and sharing web apps for machine learning and data science projects. This is likely used to create the user interface for the chatbot.
+fpdf: A library for generating PDF documents. This could be used to create reports or export chat conversations as PDFs.
+pypdf: A library for reading, splitting, merging, and otherwise manipulating PDF files. In a RAG system, this is essential for extracting text from source documents (like medical journals or textbooks in PDF format) to be used as the knowledge base.
+faiss-cpu: "Facebook AI Similarity Search" is a library for efficient similarity search and clustering of dense vectors. This is the vector database. It stores the numerical representations (embeddings) of the medical text and allows the system to quickly find the most relevant document chunks related to a user's question. The -cpu suffix means it's configured to run on the CPU.
+langchain: The core framework for building applications with Large Language Models (LLMs). It provides the tools to "chain" together different components, such as document loaders (pypdf), text splitters, embedding models (sentence-transformers), vector stores (faiss-cpu), and the LLM itself to create the full RAG pipeline.
+euriai: This appears to be a custom or private package, possibly specific to the "Euron" course or project mentioned in the file path. It might contain custom helper functions, pre-trained models, or specific API wrappers for this project.
+langchain_community: This package contains community-maintained integrations for LangChain. It allows LangChain to connect with a wide variety of third-party services, models, and databases that aren't part of the core langchain package.
+sentence-transformers: This library is used to create high-quality embeddings (numerical representations) of sentences and text. It's used to convert the text from the medical documents and the user's questions into vectors that can be stored and compared in the FAISS vector store.
+How they work together for a Medical RAG Chatbot:
+Data Ingestion: pypdf reads medical documents.
+Chunking & Embedding: langchain splits the text into manageable chunks, and sentence-transformers converts these chunks into numerical vectors (embeddings).
+Indexing: faiss-cpu stores these embeddings in a searchable vector store.
+User Interaction: streamlit provides the web interface for the user to ask a question.
+Retrieval: When a user asks a question, sentence-transformers converts the question into an embedding. faiss-cpu then searches the vector store to find the most similar (i.e., most relevant) text chunks from the original documents.
+Generation: langchain takes the original question and the retrieved text chunks and passes them to an LLM. The LLM then generates a comprehensive answer based on the provided context, effectively "augmenting" its response with the retrieved medical knowledge.
