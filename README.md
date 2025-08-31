@@ -1,3 +1,5 @@
+
+
 # 🩺 MediChat Pro
 
 **MediChat Pro** is an intelligent **medical document assistant** built with [Streamlit](https://streamlit.io/).  
@@ -58,26 +60,11 @@ The application uses a **Retrieval-Augmented Generation (RAG)** pipeline to retr
 - ✅ Deployment on Hugging Face Spaces / Streamlit Cloud.  
 
 ---
-## 📷 Demo
-Application is up and running at: [MediChat-Pro]([https://medichat-pro-01.streamlit.ap](https://medichat-pro-01.streamlit.app/)
-
-### Landing Page:
-<img width="1512" height="947" alt="image" src="https://github.com/user-attachments/assets/38059b6a-e081-439a-b3a5-3f79735d8c9d" />
-
-### Upload Files:
-<img width="1512" height="946" alt="image" src="https://github.com/user-attachments/assets/ef271537-b4c6-4039-8602-155090afd979" />
-
-### Intelligent Assitant ready:
-<img width="1509" height="945" alt="image" src="https://github.com/user-attachments/assets/e5224b19-f5b5-4275-89d1-ef5646e03c23" />
-
-### Assistant in Action:
-<img width="1512" height="939" alt="image" src="https://github.com/user-attachments/assets/91cadbfa-6802-4aac-a9b2-5760f16b7ab1" />
-
-
-
+## Streamlit-App
+ - Application is up and running at: [MediChat-Pro](https://medichat-pro-01.streamlit.app/)
+ - Demo: [DemoMediChat-Pro in Action](https://github.com/user-attachments/assets/fa38957a-8236-4eb6-b0fc-919cd2232ca7)
 
 ---
 
 ## 👨‍💻 Author
-
-Developed by **Krishna Aleti** 🚀  
+Developed by **Krishna Aleti**
